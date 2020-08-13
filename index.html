@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        #navbar {
+            display: flex;
+            position: sticky;
+
+            height: 120px;
+            width: 100%;
+            border-radius: 75px;
+
+
+        }
+
+        #navbar img {
+            margin: 7px 30px;
+            padding: 23px 19px;
+            height: 78px;
+            width: 82px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.62;
+        }
+
+
+        #navbar ul li {
+
+            list-style: none;
+            font-size: 1.3rem;
+            padding: 26px 2px;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: flex;
+            padding: 12px 50px;
+            border-radius: 24px;
+            text-decoration: none;
+            font-size: larger;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: rgb(237, 243, 243);
+        }
+
+
+
+        .right {
+            float: right;
+            margin: 30px 223px;
+            padding: 23px 12px;
+
+
+        }
+
+        .right:hover {
+            color: currentColor;
+            background-color: rgb(234, 255, 255);
+        }
+
+        .content {
+
+
+            font-family: 'Baloo Bhai 2', cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 345px;
+            width: 100%;
+            margin: 40px 3px;
+            padding: 24px 20px;
+            font-size: 30px;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 13px 31px;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+        }
+
+        #home::before {
+            content: "";
+            background: url(./food-1932466_1920.jpg);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.85;
+
+
+        }
+
+        .button {
+            font-style: normal;
+            font-size: x-large;
+            margin: auto;
+            color: black;
+            background-color: grey;
+            border: 2px solid black;
+
+        }
+
+        .button:hover {
+            cursor: pointer;
+            color: teal;
+            background-color: rgb(162, 240, 236);
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 55px;
+            padding-bottom: 34px;
+            font-size: 22px;
+        }
+
+        .containe {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px 12px;
+            margin: 23px 12px;
+
+        }
+
+        .containe::before {
+            content: "";
+            background: url(./contact-us-4193523_1920.jpg);
+            position: absolute;
+            height: 96%;
+            width: 82%;
+            z-index: -1;
+            opacity: 0.85;
+            top: 18px;
+            border: 2px solid black;
+            border-radius: 12px;
+
+
+        }
+
+        #img {
+            display: block;
+            width: 122%;
+            margin: auto;
+        }
+
+        .container1 {
+           
+            height: 344px;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+
+        .h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #clients {
+            width: 90%;
+            min-height: 61vh;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .client-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-item img {
+            display: block;
+            width: 85%;
+            min-width: 100px;
+            max-width: 350px;
+            /*actual image width*/
+            height: auto;
+            /* maintain aspect ratio*/
+            margin: auto;
+            /*optional centering of image*/
+        }
+        .container1::before {
+            content: "";
+            background: url('img/hamburge.jpg');
+            position: absolute;
+            height: 70%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+            top: 204%;
+            bottom: 50%;
+            border: 2px solid black;
+            border-radius: 12px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav id="navbar">
+            <img src="logo.png" alt="n0n source">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="right">
+                <input type="search" name="text" id="search" placeholder="search this website">
+            </div>
+        </nav>
+
+
+
+    </div>
+    <div id="home">
+        <div class="content">
+            <h2>Welcome to my World</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi id itaque a, tenetur suscipit dicta
+                corporis dolore dignissimos recusandae voluptatum, soluta molestiae ad delectus distinctio pariatur
+                laborum veritatis consequatur nisi voluptatibus, error quasi obcaecati!</p>
+            <button class="button">Order Now</button>
+        </div>
+    </div>
+    <div class="containe" id="img">
+
+
+        <div class="form">
+            <h2>Contact us</h2>
+            <form action="backend.php">
+                <label for="name">Name</label>
+                <div>
+                    <input type="text" name="myName" id="name">
+                </div>
+                <br>
+                <label for="role">role</label>
+                <div>
+
+                    <input type="text" name="myRole" id="role">
+                </div>
+                <br>
+                <div>
+                    <label for="email">email</label>
+                    <input type="email" name="myEmail" id="email">
+                </div>
+                <br>
+
+
+                <div>
+                    date: <input type="date" name="myDate">
+                </div>
+                <br>
+                <div>
+                    Bonus: <input type="number" name="myBonus">
+                </div>
+                <br>
+                <div>
+                    are u eligible?: <input type="checkbox" name="myeligibility" checked>
+                </div>
+                <br>
+                <div>
+                    Gender: Male <input type="radio" name="myGender">female <input type="radio" name="myGender"> other
+                    <input type="radio" name="myGender">
+                </div>
+                <br>
+                <div>
+                    Write about yourself: <br><textarea name="myText" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="car">car</label>
+                    <select name="myCar" id="car">
+                        <option value="ind">Indica</option>
+                        <option value="swf">Swift</option>
+                        <option value="mar" selected>maruti</option>
+                        <!-- selected by default -->
+                </div>
+                <div>
+                    <input type="submit" value="Submit Now">
+                    <input type="reset" value="reset Now">
+                </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="h1">Our Clients</div>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/apple.png" alt="non-source">
+            </div>
+            <div class="client-item">
+                <img src="img/windows.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/supreme-pizza.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+    </div>
